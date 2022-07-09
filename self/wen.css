@@ -1,8 +1,15 @@
 /* 哔哔主页相关 */
 #bbTimeList {
+  position: relative;
+  top: -5px;
+  border: 2px solid #56585d;
   width: 100%;
   align-items: center;
- 
+  height: 50px;
+}
+
+#bbTimeList:hover {
+  border: 2px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2);
 }
 
 
@@ -13,8 +20,6 @@
 #bber>section>ul>div>li>div .datacont {
   color: #6667AB !important
 }
-
-
 
 ul,
 li {

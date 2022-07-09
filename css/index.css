@@ -1264,7 +1264,7 @@ hr:before,
 }
 :root {
   --global-font-size: 14px;
-  --global-bg: #fff;
+  --global-bg: #f7f9fe;
   --font-color: #4c4948;
   --hr-border: #d2ebfd;
   --hr-before-color: #bfe4fb;
@@ -2486,17 +2486,17 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #aside-content .card-widget {
+  border: 2px solid transparent;
   position: relative;
   overflow: hidden;
   margin-top: 20px;
   padding: 20px 24px;
 }
-#aside-content .card-info {
-  border: 10px solid #ddd;
-  -webkit-border-image: -webkit-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 30 30;
-  -moz-border-image: -moz-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 30 30;
-  -o-border-image: -o-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 30 30;
-  border-image: linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 30 30;
+#aside-content .card-widget:hover {
+  -webkit-border-image: -webkit-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 10 10;
+  -moz-border-image: -moz-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 10 10;
+  -o-border-image: -o-linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 10 10;
+  border-image: linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) 10 10;
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
