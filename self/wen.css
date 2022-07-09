@@ -1,10 +1,3 @@
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
-
 /* 哔哔主页相关 */
 #bbTimeList {
   width: 100%;
@@ -22,19 +15,19 @@
 
 
 .recent-post-item {
-  border: 3px solid transparent;
+  border: 3px solid transparent !important;
 }
 
 .recent-post-item:hover {
-  border: 3px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2);
+  border: 3px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) !important;
 }
 
 .card-widget {
-  border: 3px solid transparent;
+  border: 3px solid transparent !important;
 }
 
 .card-widget:hover {
-  border: 3px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2);
+  border: 3px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) !important;
 }
 
 
