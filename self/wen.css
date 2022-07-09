@@ -6,15 +6,18 @@
   width: 100%;
   align-items: center;
   height: 50px;
+  font-size: 1.5rem;
 }
 
+
 #bbTimeList:hover {
-  border: 2px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2);
+  border: 2px solid linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2) !important;
 }
 
 
 #bbtalk {
   width: 100%;
+  font-size: 1.5rem;
 }
 
 #bber>section>ul>div>li>div .datacont {

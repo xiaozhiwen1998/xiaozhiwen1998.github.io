@@ -1,0 +1,4 @@
+.background-add {
+  background: var(--card-bg);
+  box-shadow: var(--card-box-shadow);
+}
