@@ -31,3 +31,19 @@ li {
   margin: 0;
   padding: 0;
 }
+
+.cneter-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#projectInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projectInfo img {
+  height: 100px;
+}
