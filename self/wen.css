@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.card::before {
+.myCard::before {
   content: "";
   width: 104%;
   height: 102%;
@@ -23,7 +23,7 @@
     animation: spin 2.5s linear infinite;
 }
 
-.myCard ::after {
+.myCard::after {
   position: absolute;
   content: "";
   top: calc(var(--card-height) / 6);
@@ -52,4 +52,24 @@
   100% {
     --rotate: 360deg;
   }
+}
+
+/* 哔哔主页相关 */
+#bbTimeList {
+  width: 100%;          /* 框不全 */
+  border: 2px solid #9c9;
+  align-items: center; /* 图标不居中 */ /* 其它方法#bbTimeList加一个声明justify-content: space-between; */
+}
+#bbtalk {
+  width: 100%;     /* 内容与图标不局中 */
+}
+#bber > section > ul > div > li > div .datacont{
+  color: #6667AB !important
+}
+
+ul,li{
+  list-style:none;
+  display:block;
+  margin: 0;
+  padding: 0;
 }
