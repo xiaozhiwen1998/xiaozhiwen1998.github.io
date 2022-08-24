@@ -35,15 +35,25 @@ li {
 .cneter-title {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 #projectInfo {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+
 }
 
 #projectInfo img {
   height: 100px;
+  width: 100px;
+}
+
+#projectInfo a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
 }
