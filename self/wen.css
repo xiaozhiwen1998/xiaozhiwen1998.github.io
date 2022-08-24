@@ -46,14 +46,22 @@ li {
 
 }
 
-#projectInfo img {
-  height: 100px;
-  width: 100px;
-}
-
 #projectInfo a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 150px;
+  height: 200px;
+}
+
+#projectInfo img {
+  height: 100px;
+  width: 100px;
+}
+
+#projectInfo h4 {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
