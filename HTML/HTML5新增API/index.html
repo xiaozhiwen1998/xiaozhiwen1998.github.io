@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HTML5新增API | Wen</title><meta name="keywords" content="HTML"><meta name="author" content="肖智文"><meta name="copyright" content="肖智文"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="HTML5新增APIHTML5 现在已经不是 SGML （(Standard Generalized Markup Language, 标准通用置标语言）的子集(而是超集)，主要是关于图像，位置，存储，多任务等功能的增加。  语意化标签 article、footer、header、nav、section  媒体标签的 video 和 audio、source 1234567891011121314">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5新增API">
+<meta property="og:url" content="https://xiaozhwien.cluod/HTML/HTML5%E6%96%B0%E5%A2%9EAPI/index.html">
+<meta property="og:site_name" content="Wen">
+<meta property="og:description" content="HTML5新增APIHTML5 现在已经不是 SGML （(Standard Generalized Markup Language, 标准通用置标语言）的子集(而是超集)，主要是关于图像，位置，存储，多任务等功能的增加。  语意化标签 article、footer、header、nav、section  媒体标签的 video 和 audio、source 1234567891011121314">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/avatar.jpg">
+<meta property="article:published_time" content="2022-06-08T02:08:01.000Z">
+<meta property="article:modified_time" content="2022-09-04T09:05:23.428Z">
+<meta property="article:author" content="肖智文">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/avatar.jpg"><link rel="shortcut icon" href="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/favicon.png"><link rel="canonical" href="https://xiaozhwien.cluod/HTML/HTML5%E6%96%B0%E5%A2%9EAPI/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e8b269d29f11d37885649e49b2e1a22e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 肖智文","link":"链接: ","source":"来源: Wen","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#8b7a5d","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTML5新增API',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-04 17:05:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/JS-Heo@main/bb/showbb_in_index.css"><link rel="stylesheet" href="/self/wen.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 我的动态</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-camera-retro"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Wen</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 我的动态</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-camera-retro"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTML5新增API</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-08T02:08:01.000Z" title="发表于 2022-06-08 10:08:01">2022-06-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-09-04T09:05:23.428Z" title="更新于 2022-09-04 17:05:23">2022-09-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HTML/">HTML</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HTML5新增API"><a href="#HTML5新增API" class="headerlink" title="HTML5新增API"></a>HTML5新增API</h1><p><code>HTML5</code> 现在已经不是 <code>SGML</code> （(Standard Generalized Markup Language, 标准通用置标语言）的子集(而是超集)，主要是关于图像，位置，存储，多任务等功能的增加。</p>
+<ul>
+<li><p>语意化标签 <code>article</code>、<code>footer</code>、<code>header</code>、<code>nav</code>、<code>section</code></p>
+</li>
+<li><p>媒体标签的 <code>video</code> 和 <code>audio</code>、<code>source</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio src=<span class="string">&#x27;&#x27;</span> controls autoplay loop=<span class="string">&#x27;true&#x27;</span>&gt;&lt;/audio&gt;</span><br><span class="line"><span class="comment">//controls 控制面板</span></span><br><span class="line"><span class="comment">//autoplay 自动播放</span></span><br><span class="line"><span class="comment">//loop=‘true’ 循环播放</span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&#x27;&#x27;</span> <span class="attr">poster</span>=<span class="string">&#x27;imgs/aa.jpg&#x27;</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span></span><br><span class="line"><span class="comment">//poster：指定视频还没有完全下载完毕，或者用户还没有点击播放前显示的封面。</span></span><br><span class="line"><span class="comment">//默认显示当前视频文件的第一针画面，当然通过poster也可以自己指定。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//source标签 因为浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，</span></span><br><span class="line"><span class="comment">//可以通过source来指定视频源。</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">video</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">   <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&#x27;aa.flv&#x27;</span> <span class="attr">type</span>=<span class="string">&#x27;video/flv&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">source</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">   <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&#x27;aa.mp4&#x27;</span> <span class="attr">type</span>=<span class="string">&#x27;video/mp4&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">source</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>HTML5 提供了两种在客户端存储数据的新方法：</p>
+<p><code>localStorage</code> 没有时间限制的数据存储</p>
+<p><code>sessionStorage</code>  针对一个 session 的数据存储，关闭页面就消失</p>
+</li>
+<li><p>拖拽释放(<code>Drag</code>) API</p>
+</li>
+<li><p>离线应用 <code>manifest</code></p>
+</li>
+<li><p>增强表单控件 <code>calendar</code>、<code>date</code>、<code>time</code>、<code>email</code>、<code>url</code>、<code>search</code>&amp;#x20;</p>
+</li>
+<li><p>地理位置 <code>Geolocation</code></p>
+</li>
+<li><p>多任务 <code>webworker</code></p>
+</li>
+<li><p>全双工通信协议 <code>websocket</code></p>
+</li>
+<li><p>历史管理 <code>history</code></p>
+</li>
+<li><p>新增DOM选择器 <code>document.querySelector</code> 返回文档中匹配指定 CSS 选择器的一个元素，返回 <a target="_blank" rel="noopener" href="https://www.runoob.com/js/js-htmldom-nodelist.html" title="NodeList">NodeList</a> 对象。<code>document.querySelectorAll</code></p>
+</li>
+<li><p>跨域资源共享(CORS) <code>Access-Control-Allow-Origin</code></p>
+</li>
+<li><p>跨窗口通信 <code>PostMessage</code> ,可以跨域</p>
+</li>
+<li><p><code>FormData</code> 对象</p>
+</li>
+<li><p>桌面通知 <code>Notifications</code></p>
+</li>
+</ul>
+<h2 id="一-manifest（单词意思-清单，表明）-离线应用-amp-x20"><a href="#一-manifest（单词意思-清单，表明）-离线应用-amp-x20" class="headerlink" title="一. manifest（单词意思:清单，表明） 离线应用&amp;#x20;"></a>一. manifest（单词意思:清单，表明） 离线应用&amp;#x20;</h2><p>通常用来实现Progressive Web App渐进式网络。</p>
+<p>tmanifest是<strong>渐进式Web应用程序</strong>PWA中的一个核心技术.即，用户没网络时候，可以通过缓存来访问页面，而不是直接报错。在用户与因特网连接时，更新用户机器上的缓存文件。</p>
+<p><strong>原理</strong>：HTML5的离线存储是基于一个新建的 .appcache 文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示</p>
+<h4 id="1-如何使用manifest"><a href="#1-如何使用manifest" class="headerlink" title="1.如何使用manifest"></a>1.如何使用manifest</h4><p>HTML5的离线储存</p>
+<p>(1) 在页面头部加入 manifest 属性，表示该页面可以使用离线缓存技术：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;html manifest=<span class="string">&quot;demo_html.appcache&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>(2)在同一目录中创建一个cache.manifest 文件 编写需要离线存储的资源：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">    #v0.11</span><br><span class="line">    CACHE:</span><br><span class="line">    js/app.js</span><br><span class="line">    css/style.css</span><br><span class="line">    NETWORK:</span><br><span class="line">    resourse/logo.png</span><br><span class="line">    FALLBACK:</span><br><span class="line">    //offline.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>CACHE</strong>: 表示<strong>需要离线存储</strong>的资源列表，由于包含 manifest 文件的页面将被自动离线存储，所以不需要把页面自身也列出来。</p>
+</li>
+<li><p><strong>NETWORK</strong>: 表示在它下面列出来的资源<strong>只有在在线的情况下才能访问</strong>，他们不会被离线存储，所以在离线情况下无法使用这些资源。不过，如果在 CACHE 和 NETWORK 中有一个相同的资源，那么这个资源还是会被离线存储，也就是说 CACHE 的优先级更高。</p>
+</li>
+<li><p><strong>FALLBACK</strong>: 表示如果访问第一个资源失败，那么就使用第二个资源来替换他，比如上面这个文件表示的就是如果访问根目录下任何一个资源失败了，那么就去访问 offline.html 。</p>
+</li>
+</ul>
+<p>（3）在离线状态时，操作 <code>window.applicationCache</code> 进行离线缓存的操作。</p>
+<h4 id="2-如何更新缓存"><a href="#2-如何更新缓存" class="headerlink" title="2.如何更新缓存"></a>2.如何更新缓存</h4><p>（1）更新 manifest 文件</p>
+<p>（2）通过 javascript 操作</p>
+<p>（3）清除浏览器缓存</p>
+<h4 id="3-浏览器是如何对-HTML5-的离线储存资源进行管理和加载？"><a href="#3-浏览器是如何对-HTML5-的离线储存资源进行管理和加载？" class="headerlink" title="3.浏览器是如何对 HTML5 的离线储存资源进行管理和加载？"></a>3.浏览器是如何对 HTML5 的离线储存资源进行管理和加载？</h4><p>在线的情况下，浏览器发现 html 头部有 manifest 属性，它会请求 manifest 文件，</p>
+<p>如果是第一次访问页面 ，那么浏览器就会根据 manifest 文件的内容下载相应的资源进行离线存储。</p>
+<p>如果已经访问过页面并且资源已经进行离线存储了，浏览器就会进行协商缓存。</p>
+<p>离线的情况下，浏览器会直接使用离线存储的资源。</p>
+<h2 id="二-地理定位"><a href="#二-地理定位" class="headerlink" title="二.地理定位"></a>二.地理定位</h2><p>使用getCurrentPosition()方法来获取用户的位置。以实现“LBS服务（围绕地理位置数据而展开的服务）”</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getLocation</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (navigator.<span class="property">geolocation</span>) &#123;</span><br><span class="line">            navigator.<span class="property">geolocation</span>.<span class="title function_">watchPosition</span>(showPosition); </span><br><span class="line">            <span class="comment">//watchPosition() - 持续返回用户的当前位置，并继续返回用户移动时的更新位置</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            x.<span class="property">innerHTML</span>=<span class="string">&quot;您的浏览器不支持 Geolocation 地理定位！&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showPosition</span>(<span class="params">position</span>)  &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(</span><br><span class="line">      <span class="string">&quot;Latitude(纬度): &quot;</span> + position.<span class="property">coords</span>.<span class="property">latitude</span> +</span><br><span class="line">      <span class="string">&quot;&lt;br /&gt;Longitude（精度）: &quot;</span> + position.<span class="property">coords</span>.<span class="property">longitude</span></span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">getLocation</span>()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="三-度量器meter和进度条progress"><a href="#三-度量器meter和进度条progress" class="headerlink" title="三.度量器meter和进度条progress"></a>三.度量器meter和进度条progress</h2><p>（IE、Safari不支持）</p>
+<p>区别主要有以下两点：</p>
+<p><code>&lt;progress&gt;</code>元素用于显示某个特定任务的时间进度。（如进度条，完成百分比），max用来表示任务的进度，value表示已完成多少。这个任务的时间上限是<strong>可以确定的值，或者是不可确定的值</strong>，如上传一个文件到服务器的时间是不确定的。</p>
+<p><code>&lt;meter&gt;</code>元素的不同之处在于，它的<strong>最小值和最大值必须是确定的</strong>。表示某种计量。相当于是一个测量值。（温度，速度）</p>
+<p>元素的最小值必须是一个浮点数，包括负数。表示刻度。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meter</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span>  <span class="attr">max</span>=<span class="string">&quot;200&quot;</span> <span class="attr">value</span> = <span class="string">&#x27;120&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">meter</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="四-Web-Workers-多线程"><a href="#四-Web-Workers-多线程" class="headerlink" title="四.Web Workers  多线程"></a>四.Web Workers  多线程</h2><p>在 HTML 页面中，如果在执行脚本时，页面的状态是不可响应的，直到脚本执行完成后，页面才变成可响应。</p>
+<p>web worker 是运行在后台的 js，独立于其他脚本，<strong>不会影响页面的性能</strong>。 并且通过** postMessage 将结果回传到主线程**。这样在进行复杂操作的时候，就不会阻塞主线程了。创建分线程，处理一些一些消耗性能的事情，例如:  上传大文件。</p>
+<ul>
+<li><p>web workers是一个全新的上下文，与创建它的线程无关。</p>
+</li>
+<li><p>不可以执行dom操作</p>
+</li>
+<li><p>没有window这个对象</p>
+</li>
+<li><p>通过postMessage传递消息</p>
+</li>
+</ul>
+<h3 id="1-注意事项："><a href="#1-注意事项：" class="headerlink" title="1.注意事项："></a>1.注意事项：</h3><p><strong>1、同源限制</strong>：分配给 Worker 线程运行的脚本文件，必须与主线程的脚本文件同源。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/image_p7Oj9k4WY5.png"></p>
+<p><strong>2、DOM 限制</strong>：Worker 线程所在的全局对象，与主线程不一样，无法读取主线程所在网页的 DOM 对象，也无法使用<code>document</code>、<code>window</code>、<code>parent</code>这些对象。</p>
+<p><strong>3、通信联系:</strong> Worker 线程和主线程不在同一个上下文环境，<strong>它们不能直接通信，必须通过postMessage()完成</strong>。</p>
+<p><strong>4、脚本限制:</strong> Worker 线程不能执行<code>alert()</code>方法和<code>confirm()</code>方法，但可以使用 XMLHttpRequest 对象发出 AJAX 请求。</p>
+<p><strong>5、文件限制</strong>：Worker 线程<strong>无法读取本地文件</strong>，即不能打开本机的文件系统（<code>file://</code>），它所加载的脚本，<strong>必须来自网络</strong>。</p>
+<p><strong>如何创建 web worker：</strong></p>
+<ol>
+<li><p>检测浏览器对于 web worker 的支持性</p>
+</li>
+<li><p>创建 web worker 文件（js，回传函数等）</p>
+</li>
+<li><p>创建 web worker 对象</p>
+</li>
+</ol>
+<h3 id="2-使用方法："><a href="#2-使用方法：" class="headerlink" title="2.使用方法："></a>2.使用方法：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//主线程</span></span><br><span class="line"><span class="comment">//webworker 是通过文件 来启动分线程的。</span></span><br><span class="line"><span class="keyword">var</span> myworker = <span class="keyword">new</span> <span class="title class_">Worker</span>(<span class="string">&#x27;url&#x27;</span>)  <span class="comment">//url是分线程文件路径  文件是js</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在主线程中，使用对应的实例化对象，调用postMessage 方法,向分线程传输数据</span></span><br><span class="line">myworker.<span class="title function_">postMessage</span>(data)</span><br><span class="line"></span><br><span class="line"><span class="comment">//接收返回的数据</span></span><br><span class="line">myworker.<span class="property">onmessage</span> = <span class="keyword">function</span>(<span class="params">event</span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(event.<span class="property">data</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//完成任务后，可以关闭</span></span><br><span class="line">worker.<span class="title function_">terminate</span>();</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//worker 线程文件</span></span><br><span class="line"><span class="comment">//在 Worker 线程中，self 和 this 都代表子线程的全局对象。</span></span><br><span class="line"><span class="comment">//我们可以通过这个事件event对象上的data属性来访问主线程传递的数据</span></span><br><span class="line">self.<span class="property">onmessage</span> = <span class="keyword">function</span>(<span class="params">event</span>)&#123;</span><br><span class="line">  <span class="title function_">fn</span>(event.<span class="property">data</span>)</span><br><span class="line">  self.<span class="title function_">postMessage</span>(result)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-worker使用场景"><a href="#3-worker使用场景" class="headerlink" title="3.worker使用场景"></a>3.worker使用场景</h3><p>Worker 线程完成轮询，有时，浏览器需要轮询服务器状态，以便第一时间得知状态改变。这个工作可以放在 Worker 里面。是不使用websocket的一种解决方法。</p>
+<h3 id="4-SharedWorker"><a href="#4-SharedWorker" class="headerlink" title="4. SharedWorker"></a>4. SharedWorker</h3><p>是一种特定类型的 worker，可以从几个浏览上下文中访问，例如几个窗口、iframe 或其他 worker。它们实现一个不同于普通 worker 的接口，具有不同的全局作用域,</p>
+<p>同样页面之间需要符合同源策略。</p>
+<h3 id="5-service-worker"><a href="#5-service-worker" class="headerlink" title="5. service worker"></a>5. service worker</h3><p>Service worker是一个注册在指定源和路径下的事件驱动worker，它采用JavaScript控制关联的页面或者网站，拦截并修改访问和资源请求，细粒度地缓存资源。 &amp;#x20;<br>常见于网络不可用的情况下，pwa向其请求资源。</p>
+<p>service worker可以理解为一个中间代理服务器。它特别的地方是离线状态也可以访问，如果存在你需要的资源就可以返回给你，这样达到离线访问web app的目的。</p>
+<h2 id="五-数据通信postMessage"><a href="#五-数据通信postMessage" class="headerlink" title="五.数据通信postMessage"></a>五.数据通信postMessage</h2><p>主线程与 Worker 之间的通信内容，可以是文本，也可以是对象。需要注意的是，这种<strong>通信是拷贝关系</strong>，即是传值而不是传址，Worker 对通信内容的修改，不会影响到主线程。</p>
+<p>事实上，浏览器内部的运行机制是，先将通信内容<strong>串行化</strong>(类似于<code>JSON.stringfy()</code>序列化)，然后把串行化后的字符串发给 Worker，后者再将它还原（类似于<code>JSON.parse()</code> 的方法反序列化）。</p>
+<p>由于拷贝效率低的问题，JavaScript 允许主线程把二进制数据直接转移给子线程，<strong>这种转移是彻底的，一旦转移，主线程就无法再使用这些二进制数据了</strong>，这是为了防止出现多个线程同时修改数据的麻烦局面。这种转移数据的方法，叫做<a target="_blank" rel="noopener" href="https://www.w3.org/html/wg/drafts/html/master/infrastructure.html#transferable-objects" title="Transferable Objects">Transferable Objects</a>。仍然通过 <code>postMessage</code> 进行传递，只不过加上一个参参数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">postMessage</span>(message, transferList)</span><br></pre></td></tr></table></figure>
+
+<p>例如，传递一个 ArrayBuffer 对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> aBuffer = <span class="keyword">new</span> <span class="title class_">ArrayBuffer</span>(<span class="number">1</span>)</span><br><span class="line">worker.<span class="title function_">postMessage</span>(&#123; <span class="attr">data</span>: aBuffer &#125;, [aBuffer])</span><br></pre></td></tr></table></figure>
+
+<p><code>postMessage</code>方法第二个参数可以设置要发送到哪个url，如果当前子页面的url和设置的不一致，则会发送失败，我们设置为<code>*</code>，代表所有url都允许发送。可以省略</p>
+<p>第三个参数如果是数组，则是一个<a target="_blank" rel="noopener" href="https://www.w3.org/html/wg/drafts/html/master/infrastructure.html#transferable-objects" title="Transferable Objects">Transferable Objects</a></p>
+<h2 id="六-WebSocket-amp-x20"><a href="#六-WebSocket-amp-x20" class="headerlink" title="六.WebSocket&amp;#x20;"></a>六.WebSocket&amp;#x20;</h2><p>&amp;#x20;HTTP 协议有一个缺陷：通信只能由客户端发起。因此无法实现实现服务器主动向客户端发送消息。如果采用轮询机制会消耗大量资源。<strong>WebSocket的出现，使得浏览器具备了实时双向通信的能力。</strong></p>
+<p>websocket是一种使用HTTP建立连接，基于TCP的全双工通信协议(真正传输时候是不需要HTTP协议的)。属于应用层协议。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/image_sbdSjGzxYU.png"></p>
+<h3 id="1-优点："><a href="#1-优点：" class="headerlink" title="1.优点："></a>1.优点：</h3><ol>
+<li><p>支持双向通信，实时性更强。</p>
+</li>
+<li><p>较少的控制开销。协议控制的请求头较小，而HTTP协议每次通信都需要携带完整的头部</p>
+</li>
+<li><p>支持扩展。</p>
+</li>
+<li><p>没有同源限制，可以跨域。</p>
+</li>
+</ol>
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2.使用方法"></a>2.使用方法</h3><p>协议标识符是<code>ws</code>（如果加密，则为<code>wss</code>），服务器网址就是 URL。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/image_PcuPQ7z-Av.png"></p>
+<p>服务端</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)();</span><br><span class="line"><span class="keyword">var</span> server = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>).<span class="title class_">Server</span>(app);</span><br><span class="line"><span class="keyword">var</span> <span class="title class_">WebSocket</span> = <span class="built_in">require</span>(<span class="string">&#x27;ws&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> wss = <span class="keyword">new</span> <span class="title class_">WebSocket</span>.<span class="title class_">Server</span>(&#123; <span class="attr">port</span>: <span class="number">8080</span> &#125;);</span><br><span class="line"></span><br><span class="line">wss.<span class="title function_">on</span>(<span class="string">&#x27;connection&#x27;</span>, <span class="keyword">function</span> <span class="title function_">connection</span>(<span class="params">ws</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;server: receive connection.&#x27;</span>);</span><br><span class="line">    </span><br><span class="line">    ws.<span class="title function_">on</span>(<span class="string">&#x27;message&#x27;</span>, <span class="keyword">function</span> <span class="title function_">incoming</span>(<span class="params">message</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;server: received: %s&#x27;</span>, message);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    ws.<span class="title function_">send</span>(<span class="string">&#x27;world&#x27;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) &#123;</span><br><span class="line">  res.<span class="title function_">sendfile</span>(__dirname + <span class="string">&#x27;/index.html&#x27;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+
+<p>客户端</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">var</span> ws = <span class="keyword">new</span> <span class="title class_">WebSocket</span>(<span class="string">&#x27;ws://localhost:8080&#x27;</span>);</span><br><span class="line">  ws.<span class="property">onopen</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ws onopen&#x27;</span>);</span><br><span class="line">    ws.<span class="title function_">send</span>(<span class="string">&#x27;from client: hello&#x27;</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">  ws.<span class="property">onmessage</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ws onmessage&#x27;</span>);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;from server: &#x27;</span> + e.<span class="property">data</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">-----------------------api</span><br><span class="line">ws.<span class="title function_">onopen</span>(<span class="function">()=&gt;</span>&#123;&#125;)  <span class="comment">//指定连接成功后的回调函数。</span></span><br><span class="line">ws.<span class="title function_">onclose</span>()<span class="comment">//用于指定连接关闭后的回调函数。</span></span><br><span class="line">ws.<span class="title function_">onmessage</span>() <span class="comment">//用于指定收到服务器数据后的回调函数。</span></span><br><span class="line">ws.<span class="title function_">send</span>()<span class="comment">//方法用于向服务器发送数据。</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-如何建立连接"><a href="#3-如何建立连接" class="headerlink" title="3.如何建立连接"></a>3.如何建立连接</h3><p>WebSocket复用了<strong>HTTP的握手通道</strong>。具体指的是，客户端通过HTTP请求与WebSocket服务端<strong>协商升级协议</strong>。协议升级完成后，后续的数据交换则遵照WebSocket的协议。</p>
+<p>1、客户端：申请协议升级</p>
+<p>首先，客户端发起协议升级请求。可以看到，采用的是标准的HTTP报文格式，且只支持<code>GET</code>方法,通过设置一系列请求头</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span> / <span class="variable constant_">HTTP</span>/<span class="number">1.1</span></span><br><span class="line"><span class="title class_">Host</span>: <span class="attr">localhost</span>:<span class="number">8080</span></span><br><span class="line"><span class="title class_">Origin</span>: <span class="attr">http</span>:<span class="comment">//127.0.0.1:3000</span></span><br><span class="line"><span class="title class_">Connection</span>: <span class="title class_">Upgrade</span>   <span class="comment">//表示要升级协议</span></span><br><span class="line"><span class="title class_">Upgrade</span>: websocket   <span class="comment">//表示要升级到websocket协议。</span></span><br><span class="line"><span class="title class_">Sec</span>-<span class="title class_">WebSocket</span>-<span class="title class_">Version</span>: <span class="number">13</span>  <span class="comment">//表示websocket的版本</span></span><br><span class="line"><span class="title class_">Sec</span>-<span class="title class_">WebSocket</span>-<span class="title class_">Key</span>: w4v7O6xFTi36lq3RNcgctw==</span><br></pre></td></tr></table></figure>
+
+<p>2.服务端：响应协议升级</p>
+<p>服务端返回内容如下，<strong>状态代码</strong>​<strong>表示协议切换</strong>。到此完成协议升级，后续的数据交互都按照新的协议来。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">HTTP</span>/<span class="number">1.1</span> <span class="number">101</span> <span class="title class_">Switching</span> <span class="title class_">Protocols</span></span><br><span class="line"><span class="title class_">Connection</span>:<span class="title class_">Upgrade</span></span><br><span class="line"><span class="title class_">Upgrade</span>: websocket</span><br><span class="line"><span class="title class_">Sec</span>-<span class="title class_">WebSocket</span>-<span class="title class_">Accept</span>: <span class="title class_">Oy4NRAQ13</span>jhfONC7bP8dTKb4PTU=</span><br><span class="line"><span class="comment">//根据客户端请求首部的Sec-WebSocket-Key计算出来。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-数据帧"><a href="#4-数据帧" class="headerlink" title="4.数据帧"></a>4.数据帧</h3><p>WebSocket客户端、服务端通信的最小单位是帧，一旦建立连接后，后续的操作都是基于<strong>数据帧的传递</strong>。</p>
+<ol>
+<li><p>发送端：将消息切割成多个帧，并发送给服务端；</p>
+</li>
+<li><p>接收端：接收消息帧，并将关联的帧重新组装成完整的消息；</p>
+</li>
+</ol>
+<h3 id="5-websocket-断线重连"><a href="#5-websocket-断线重连" class="headerlink" title="5.websocket 断线重连"></a>5.websocket 断线重连</h3><p>利用心跳机制，客户端定时的给服务端发送消息，证明客户端是在线的， 如果超过一定的时间没有发送则就是离线了。</p>
+<p>当客户端第一次发送请求 至 服务端时会携带<strong>唯一标识</strong>、<strong>时间戳</strong>，服务端会去查询改请求的唯一标识，如果不存在就存入db或者缓存中，</p>
+<p>第二次客户端定时再次发送请求依旧携带唯一标识、时间戳，服务端查询该请求的唯一标识，如果存在，判断新旧时间戳之差的时间是否大于指定的时间，若小于的话就是在线，否则就是离线；</p>
+<p>客户端、服务端虽然长时间没有数据往来，但仍需要保持连接。这个时候，可以采用心跳来实现保持连接。</p>
+<ul>
+<li><p>发送方-&gt;接收方：ping</p>
+</li>
+<li><p>接收方-&gt;发送方：pong</p>
+</li>
+</ul>
+<h3 id="6-数据掩码"><a href="#6-数据掩码" class="headerlink" title="6.数据掩码"></a>6.数据掩码</h3><p>并不是为了防止数据泄密，而是为了防止早期版本的协议中存在的<strong>代理缓存污染攻击</strong>（proxy cache poisoning attacks）等问题。客户端向服务端发送数据需要掩码，服务端向客户端发送数据不需要掩码。</p>
+<p>Service worker是一个注册在指定源和路径下的事件驱动worker</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://xiaozhwien.cluod">肖智文</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://xiaozhwien.cluod/HTML/HTML5%E6%96%B0%E5%A2%9EAPI/">https://xiaozhwien.cluod/HTML/HTML5新增API/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://xiaozhwien.cluod" target="_blank">Wen</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/f178a405aa4907345cd364a966f5ba7.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/f178a405aa4907345cd364a966f5ba7.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/f178a405aa4907345cd364a966f5ba7.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://xiaozhiwen-hexo.oss-cn-hangzhou.aliyuncs.com/hexo-img/7ffe3896b9e0a22f4e53902507cd6c3.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/webpack/webpack%E7%9A%84loader,plugin%E5%8E%9F%E7%90%86/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">webpack的loader,plugin原理</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5%E6%96%B0%E5%A2%9EAPI"><span class="toc-number">1.</span> <span class="toc-text">HTML5新增API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-manifest%EF%BC%88%E5%8D%95%E8%AF%8D%E6%84%8F%E6%80%9D-%E6%B8%85%E5%8D%95%EF%BC%8C%E8%A1%A8%E6%98%8E%EF%BC%89-%E7%A6%BB%E7%BA%BF%E5%BA%94%E7%94%A8-amp-x20"><span class="toc-number">1.1.</span> <span class="toc-text">一. manifest（单词意思:清单，表明） 离线应用&amp;#x20;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8manifest"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">1.如何使用manifest</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">2.如何更新缓存</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%AF%B9-HTML5-%E7%9A%84%E7%A6%BB%E7%BA%BF%E5%82%A8%E5%AD%98%E8%B5%84%E6%BA%90%E8%BF%9B%E8%A1%8C%E7%AE%A1%E7%90%86%E5%92%8C%E5%8A%A0%E8%BD%BD%EF%BC%9F"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">3.浏览器是如何对 HTML5 的离线储存资源进行管理和加载？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.2.</span> <span class="toc-text">二.地理定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%BA%A6%E9%87%8F%E5%99%A8meter%E5%92%8C%E8%BF%9B%E5%BA%A6%E6%9D%A1progress"><span class="toc-number">1.3.</span> <span class="toc-text">三.度量器meter和进度条progress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-Web-Workers-%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.4.</span> <span class="toc-text">四.Web Workers  多线程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.注意事项：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.使用方法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-worker%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.worker使用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-SharedWorker"><span class="toc-number">1.4.4.</span> <span class="toc-text">4. SharedWorker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-service-worker"><span class="toc-number">1.4.5.</span> <span class="toc-text">5. service worker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1postMessage"><span class="toc-number">1.5.</span> <span class="toc-text">五.数据通信postMessage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-WebSocket-amp-x20"><span class="toc-number">1.6.</span> <span class="toc-text">六.WebSocket&amp;#x20;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-number">1.6.1.</span> <span class="toc-text">1.优点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.6.2.</span> <span class="toc-text">2.使用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.6.3.</span> <span class="toc-text">3.如何建立连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%95%B0%E6%8D%AE%E5%B8%A7"><span class="toc-number">1.6.4.</span> <span class="toc-text">4.数据帧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-websocket-%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E"><span class="toc-number">1.6.5.</span> <span class="toc-text">5.websocket 断线重连</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%95%B0%E6%8D%AE%E6%8E%A9%E7%A0%81"><span class="toc-number">1.6.6.</span> <span class="toc-text">6.数据掩码</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 By 肖智文</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="icp链接"><img class="icp-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gw.alicdn.com/tfs/TB1jwakrbH1gK0jSZFwXXc7aXXa-20-20.png"><span>备案号：赣ICP备2022003304号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-phi-blue.vercel.app/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-phi-blue.vercel.app/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div></div></body></html>
